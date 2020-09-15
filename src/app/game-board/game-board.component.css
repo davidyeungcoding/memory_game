@@ -1,0 +1,40 @@
+.board-button {
+  max-width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin: 15px auto;
+  display: block;
+  transition: box-shadow 375ms;
+  transition-timing-function: ease-in-out;
+}
+
+.board-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.board-spacing {
+  width: 33%;
+  padding: 0;
+}
+
+.win-state-footer {
+  justify-content: center;
+}
+
+#temp {
+  background-image: url("../../assets/ChalkboardBackground.jpg");
+}
+
+#game-board {
+  padding: 2vh 0;
+}
+
+@media only screen and (min-width: 1900px) {
+  #temp {
+    background-size: 100vw;
+  }
+}

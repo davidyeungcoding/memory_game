@@ -1,0 +1,44 @@
+<div id="temp">
+  <div class="container">
+    <div id="game-board"
+    class="row">
+      <div *ngFor="let button of board"
+      class="col-sm-4 col-md-3 board-spacing">
+      <img type="button"
+      id="{{ button.id }}"
+      class="board-button"
+      [src]="button.display"
+      (click)="flip(button)">
+    </div>
+  </div>
+</div>
+
+
+<div id="winState"
+class="modal fade"
+tabindex="-1"
+aria-labelledby="congratulations"
+aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Congratulations, you win!</h5>
+        <button type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer win-state-footer">
+        <button type="button"
+        class="btn btn-secondary modal-btn"
+        data-dismiss="modal"
+        (click)="newGame()">Play Again</button>
+        <Button type="button"
+        class="btn btn-secondary modal-btn"
+        data-dismiss="modal">Close</Button>
+      </div>
+    </div>
+  </div>
+</div>
