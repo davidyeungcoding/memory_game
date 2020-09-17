@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-style">
-  <a class="navbar-brand"
+  <a class="navbar-brand titles"
   href="#">Memory Match</a>
   <button type="button"
   class="navbar-toggler"
@@ -8,18 +8,17 @@
   aria-controls="#navbar-data"
   aria-expanded="false"
   aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-
   <div id="navbar-data"
   class="collapse navbar-collapse">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item nav-button">
         <button type="button"
-        class="btn"
+        class="btn secondary"
         (click)="newGame()">New Game</button>
       </li>
-      <li class="nav-item">
+      <li class="nav-item nav-button">
         <button type="button"
-        class="btn"
+        class="btn secondary"
         data-toggle="modal"
         data-target="#howToPlay">How to Play</button>
       </li>
@@ -35,7 +34,7 @@ aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">How to Play</h5>
+        <h3 class="modal-title titles">How to Play</h3>
         <button type="button"
         class="close"
         data-dismiss="modal"
@@ -44,7 +43,14 @@ aria-hidden="true">
         </button>
       </div>
       <div class="modal-body">
-        <p>...</p>
+        <p>&emsp;Each tile has two faces. One is shared between all tiles and
+          is on display by default. The other is revealed once a tile has been
+          clicked and has only one matching pair. You can only flip two tiles
+          at a time at which point the game will check to see if they match.
+          If you reveal a matching pair, both tiles will remain flipped,
+          otherwise they will both go back to to the default image. You win
+          once all tiles have been revealed.
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button"

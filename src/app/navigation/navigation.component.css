@@ -6,3 +6,20 @@
 .navbar-brand {
   font-size: 2em;
 }
+
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 320px) {
+  .titles {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .titles {
+    margin-left: 50px;
+  }
+}
