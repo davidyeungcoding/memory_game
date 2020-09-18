@@ -13,13 +13,13 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .nav-titles {
+  .nav-title {
     font-size: 1.6em;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-titles {
+  .nav-title {
     margin-left: 50px;
   }
 }
