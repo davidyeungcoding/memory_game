@@ -7,28 +7,28 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class GameMechanicsService {
   images: string[] = [
-    '../assets/images/chicago.jpg',
-    '../assets/images/colorado.jpg',
-    '../assets/images/columbus.jpg',
-    '../assets/images/dallas.jpg',
-    '../assets/images/dc.jpg',
-    '../assets/images/houston.jpg',
-    '../assets/images/kansas_city.jpg',
-    '../assets/images/la.jpg',
-    '../assets/images/montreal.jpg',
-    '../assets/images/new_england.jpg',
-    '../assets/images/new_york_rb.jpg',
-    '../assets/images/nyc.jpg',
-    '../assets/images/orlando.jpg',
-    '../assets/images/philadelphia.jpg',
-    '../assets/images/portland.jpg',
-    '../assets/images/salt_lake.jpg',
-    '../assets/images/san_jose.jpg',
-    '../assets/images/seattle.jpg',
-    '../assets/images/toranto.jpg',
-    '../assets/images/vancouver.jpg'
+    '../images/chicago.jpg',
+    '../images/colorado.jpg',
+    '../images/columbus.jpg',
+    '../images/dallas.jpg',
+    '../images/dc.jpg',
+    '../images/houston.jpg',
+    '../images/kansas_city.jpg',
+    '../images/la.jpg',
+    '../images/montreal.jpg',
+    '../images/new_england.jpg',
+    '../images/new_york_rb.jpg',
+    '../images/nyc.jpg',
+    '../images/orlando.jpg',
+    '../images/philadelphia.jpg',
+    '../images/portland.jpg',
+    '../images/salt_lake.jpg',
+    '../images/san_jose.jpg',
+    '../images/seattle.jpg',
+    '../images/toranto.jpg',
+    '../images/vancouver.jpg'
   ];
-  default: string = '../assets/images/mls.jpg';
+  default: string = '../images/mls.jpg';
   selectedTeams: object = {};
   board: Button[] = new Array(12);
   matched: object = {};
