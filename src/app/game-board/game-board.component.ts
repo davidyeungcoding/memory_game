@@ -21,8 +21,6 @@ export class GameBoardComponent implements OnInit {
   }
 
   flip(delta: Button): void {
-    console.log(this.first)
-    console.log(this.matched)
     if (!this.matched[delta.id]) {
       let current = document.getElementById(delta.id);
       current.classList.add("selected");
